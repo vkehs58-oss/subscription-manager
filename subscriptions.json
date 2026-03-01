@@ -1,0 +1,315 @@
+{
+  "lastUpdated": "2026-02-28",
+  "categories": [
+    {
+      "id": "delivery",
+      "name": "배달/쇼핑",
+      "icon": "🛵",
+      "services": [
+        {
+          "id": "naver-plus",
+          "name": "네이버플러스 멤버십",
+          "provider": "네이버",
+          "plans": [
+            { "name": "월간", "price": 4900, "period": "monthly", "features": [] }
+          ]
+        },
+        {
+          "id": "coupang-wow",
+          "name": "쿠팡 와우",
+          "provider": "쿠팡",
+          "plans": [
+            { "name": "월간", "price": 7890, "period": "monthly", "features": [] }
+          ]
+        },
+        {
+          "id": "yogipass-x",
+          "name": "요기패스X",
+          "provider": "요기요",
+          "plans": [
+            { "name": "월간", "price": 2900, "period": "monthly", "features": [] }
+          ]
+        },
+        {
+          "id": "baemin-club",
+          "name": "배민클럽",
+          "provider": "배달의민족",
+          "plans": [
+            { "name": "월간", "price": 3990, "period": "monthly", "features": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ott",
+      "name": "OTT",
+      "icon": "🎬",
+      "services": [
+        {
+          "id": "netflix",
+          "name": "넷플릭스",
+          "provider": "Netflix",
+          "plans": [
+            { "name": "광고형 스탠다드", "price": 5500, "period": "monthly", "features": [] },
+            { "name": "스탠다드", "price": 13500, "period": "monthly", "features": [] },
+            { "name": "프리미엄", "price": 17000, "period": "monthly", "features": [] }
+          ]
+        },
+        {
+          "id": "disney-plus",
+          "name": "디즈니+",
+          "provider": "Disney",
+          "plans": [
+            { "name": "스탠다드", "price": 9900, "period": "monthly", "features": [] },
+            { "name": "프리미엄", "price": 13900, "period": "monthly", "features": [] }
+          ]
+        },
+        {
+          "id": "tving",
+          "name": "티빙",
+          "provider": "CJ ENM",
+          "plans": [
+            { "name": "광고형", "price": 5500, "period": "monthly", "features": [] },
+            { "name": "스탠다드", "price": 10900, "period": "monthly", "features": [] },
+            { "name": "프리미엄", "price": 13900, "period": "monthly", "features": [] }
+          ]
+        },
+        {
+          "id": "wavve",
+          "name": "웨이브",
+          "provider": "SK",
+          "plans": [
+            { "name": "베이직", "price": 7900, "period": "monthly", "features": [] },
+            { "name": "스탠다드", "price": 10900, "period": "monthly", "features": [] },
+            { "name": "프리미엄", "price": 13900, "period": "monthly", "features": [] }
+          ]
+        },
+        {
+          "id": "watcha",
+          "name": "왓챠",
+          "provider": "왓챠",
+          "plans": [
+            { "name": "베이직", "price": 7900, "period": "monthly", "features": [] },
+            { "name": "프리미엄", "price": 12900, "period": "monthly", "features": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "name": "음악",
+      "icon": "🎵",
+      "services": [
+        {
+          "id": "spotify",
+          "name": "스포티파이",
+          "provider": "Spotify",
+          "plans": [
+            { "name": "개인", "price": 10900, "period": "monthly", "features": [] },
+            { "name": "베이직", "price": 7900, "period": "monthly", "features": [] },
+            { "name": "학생", "price": 6000, "period": "monthly", "features": [] },
+            { "name": "듀오", "price": 16350, "period": "monthly", "features": [] }
+          ]
+        },
+        {
+          "id": "melon",
+          "name": "멜론",
+          "provider": "카카오",
+          "plans": [
+            { "name": "스트리밍", "price": 10900, "period": "monthly", "features": [] },
+            { "name": "스트리밍+다운로드", "price": 13500, "period": "monthly", "features": [] }
+          ]
+        },
+        {
+          "id": "apple-music",
+          "name": "애플뮤직",
+          "provider": "Apple",
+          "plans": [
+            { "name": "개인", "price": 11000, "period": "monthly", "features": [] },
+            { "name": "패밀리", "price": 16500, "period": "monthly", "features": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cloud",
+      "name": "클라우드",
+      "icon": "☁️",
+      "services": [
+        {
+          "id": "icloud",
+          "name": "iCloud+",
+          "provider": "Apple",
+          "plans": [
+            { "name": "5GB", "price": 0, "period": "monthly", "storage": 5, "features": [] },
+            { "name": "50GB", "price": 1100, "period": "monthly", "storage": 50, "features": [] },
+            { "name": "200GB", "price": 4400, "period": "monthly", "storage": 200, "features": [] },
+            { "name": "2TB", "price": 14000, "period": "monthly", "storage": 2048, "features": [] },
+            { "name": "6TB", "price": 44000, "period": "monthly", "storage": 6144, "features": [] },
+            { "name": "12TB", "price": 88000, "period": "monthly", "storage": 12288, "features": [] }
+          ]
+        },
+        {
+          "id": "google-one",
+          "name": "Google One",
+          "provider": "Google",
+          "plans": [
+            { "name": "Basic 100GB", "price": 2400, "period": "monthly", "storage": 100, "features": [] },
+            { "name": "Premium 2TB", "price": 11900, "period": "monthly", "storage": 2048, "features": [] }
+          ]
+        },
+        {
+          "id": "ms365",
+          "name": "Microsoft 365",
+          "provider": "Microsoft",
+          "plans": [
+            { "name": "Personal", "price": 12500, "period": "monthly", "storage": 1024, "features": [], "yearlyPrice": 125000 },
+            { "name": "Family", "price": 15500, "period": "monthly", "storage": 6144, "features": [], "yearlyPrice": 155000 },
+            { "name": "Premium", "price": 29000, "period": "monthly", "storage": 1024, "features": [], "yearlyPrice": 290000 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gaming",
+      "name": "게임",
+      "icon": "🎮",
+      "services": [
+        {
+          "id": "xbox-gamepass",
+          "name": "Xbox Game Pass",
+          "provider": "Microsoft",
+          "plans": [
+            { "name": "Essential", "price": 10800, "period": "monthly", "features": [] },
+            { "name": "Premium", "price": 14900, "period": "monthly", "features": [] },
+            { "name": "PC Game Pass", "price": 18000, "period": "monthly", "features": [] },
+            { "name": "Ultimate", "price": 29000, "period": "monthly", "features": [] }
+          ]
+        },
+        {
+          "id": "nintendo-online",
+          "name": "Nintendo Switch Online",
+          "provider": "Nintendo",
+          "plans": [
+            { "name": "일반(개인) 월간", "price": 4900, "period": "monthly", "features": [] },
+            { "name": "일반(개인) 연간", "price": 1658, "period": "yearly", "features": [], "note": "월 약 1,658원", "yearlyPrice": 19900 },
+            { "name": "일반(패밀리) 연간", "price": 3158, "period": "yearly", "features": [], "note": "월 약 3,158원", "yearlyPrice": 37900 },
+            { "name": "추가팩(개인) 연간", "price": 3325, "period": "yearly", "features": [], "note": "월 약 3,325원", "yearlyPrice": 39900 },
+            { "name": "추가팩(패밀리) 연간", "price": 6242, "period": "yearly", "features": [], "note": "월 약 6,242원", "yearlyPrice": 74900 }
+          ]
+        },
+        {
+          "id": "ps-plus",
+          "name": "PlayStation Plus",
+          "provider": "Sony",
+          "plans": [
+            { "name": "에센셜 월간", "price": 10800, "period": "monthly", "features": [] },
+            { "name": "스페셜 월간", "price": 16200, "period": "monthly", "features": [] },
+            { "name": "디럭스 월간", "price": 19000, "period": "monthly", "features": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "name": "금융",
+      "icon": "💰",
+      "services": [
+        {
+          "id": "toss-prime",
+          "name": "토스 프라임",
+          "provider": "토스",
+          "plans": [
+            { "name": "월간", "price": 5900, "period": "monthly", "features": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "name": "소셜/메신저",
+      "icon": "💬",
+      "services": [
+        {
+          "id": "youtube-premium",
+          "name": "유튜브 프리미엄",
+          "provider": "Google",
+          "plans": [
+            { "name": "개인", "price": 14900, "period": "monthly", "features": [] }
+          ]
+        },
+        {
+          "id": "kakao-emoticon",
+          "name": "카카오톡 이모티콘플러스",
+          "provider": "카카오",
+          "plans": [
+            { "name": "월간", "price": 3900, "period": "monthly", "features": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "name": "AI",
+      "icon": "🤖",
+      "services": [
+        {
+          "id": "chatgpt",
+          "name": "ChatGPT",
+          "provider": "OpenAI",
+          "currency": "USD",
+          "plans": [
+            { "name": "Free", "price": 0, "period": "monthly", "features": [] },
+            { "name": "Plus", "price": 20, "period": "monthly", "features": [] },
+            { "name": "Pro", "price": 200, "period": "monthly", "features": [] }
+          ]
+        },
+        {
+          "id": "claude",
+          "name": "Claude",
+          "provider": "Anthropic",
+          "currency": "USD",
+          "plans": [
+            { "name": "Free", "price": 0, "period": "monthly", "features": [] },
+            { "name": "Pro", "price": 20, "period": "monthly", "features": [] },
+            { "name": "Max x5", "price": 100, "period": "monthly", "features": [] },
+            { "name": "Max x10", "price": 200, "period": "monthly", "features": [] }
+          ]
+        },
+        {
+          "id": "gemini",
+          "name": "Gemini",
+          "provider": "Google",
+          "plans": [
+            { "name": "Free", "price": 0, "period": "monthly", "features": [] },
+            { "name": "AI Plus", "price": 5500, "period": "monthly", "currency": "KRW", "features": [] },
+            { "name": "AI Pro", "price": 29000, "period": "monthly", "currency": "KRW", "features": [] },
+            { "name": "AI Ultra", "price": 180000, "period": "monthly", "currency": "KRW", "features": [] }
+          ]
+        },
+        {
+          "id": "perplexity",
+          "name": "Perplexity AI",
+          "provider": "Perplexity",
+          "currency": "USD",
+          "plans": [
+            { "name": "Free", "price": 0, "period": "monthly", "features": [] },
+            { "name": "Pro", "price": 20, "period": "monthly", "features": [] }
+          ]
+        },
+        {
+          "id": "xai",
+          "name": "xAI (Grok)",
+          "provider": "xAI",
+          "currency": "USD",
+          "plans": [
+            { "name": "Free", "price": 0, "period": "monthly", "features": [] },
+            { "name": "X Premium", "price": 8, "period": "monthly", "features": [] },
+            { "name": "SuperGrok", "price": 30, "period": "monthly", "features": [] },
+            { "name": "SuperGrok Heavy", "price": 300, "period": "monthly", "features": [] }
+          ]
+        }
+      ]
+    }
+  ]
+}
