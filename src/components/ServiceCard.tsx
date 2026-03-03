@@ -136,6 +136,17 @@ export default function ServiceCard({
                       ))}
                     </div>
                   )}
+                  {active && svc.cancelUrl && (
+                    <a
+                      href={svc.cancelUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="mt-2 ml-auto flex items-center gap-1 text-[11px] font-semibold text-red-400 hover:text-red-500 transition-colors"
+                    >
+                      해지하기 →
+                    </a>
+                  )}
                 </button>
               )
             })}

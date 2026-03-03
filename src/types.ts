@@ -14,6 +14,7 @@ export interface Service {
   name: string;
   provider: string;
   currency?: string;
+  cancelUrl?: string;
   plans: Plan[];
 }
 

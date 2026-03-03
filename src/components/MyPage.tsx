@@ -191,6 +191,9 @@ export default function MyPage({ mySubscriptions, categories, onRemove, onUpdate
                               ? `${sub.yearlyPrice.toLocaleString()}원`
                               : fmt(sub.price, sub.currency)}
                           </span>
+                          {!yearly && sub.currency === 'USD' && (
+                            <div className="text-[11px] text-toss-gray-400">약 {toKRW(sub.price, sub.currency).toLocaleString()}원</div>
+                          )}
                           {yearly && sub.yearlyPrice && (
                             <div className="text-[11px] text-toss-gray-400">월 {fmt(sub.price, sub.currency)}</div>
                           )}
@@ -242,14 +245,14 @@ export default function MyPage({ mySubscriptions, categories, onRemove, onUpdate
       ))}
 
       {/* 초기화 버튼 */}
-      <div className="mt-6 px-4">
+      <div className="mt-6 flex justify-center">
         <button
           onClick={() => {
             if (window.confirm('구독 목록을 모두 초기화할까요?')) {
               onUpdate([])
             }
           }}
-          className="w-full py-3 rounded-xl text-[13px] font-semibold text-white bg-toss-blue active:bg-toss-blue-dark transition-colors"
+          className="text-[12px] text-toss-gray-400 underline decoration-toss-gray-300"
         >
           구독 목록 초기화
         </button>

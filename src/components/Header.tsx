@@ -6,7 +6,7 @@ interface Props {
 
 export default function Header({ myCount, tab, setTab }: Props) {
   return (
-    <div className="bg-white sticky top-0 z-20">
+    <div className="bg-white sticky top-0 z-20 shadow-sm">
       <div className="px-5 pt-10 pb-4 flex items-center gap-3.5">
         <img
           src="/logo.png"
