@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-28",
+  "lastUpdated": "2026-03-04",
   "categories": [
     {
       "id": "delivery",
@@ -699,6 +699,103 @@
             }
           ],
           "cancelUrl": "https://x.ai/account"
+        }
+      ]
+    },
+    {
+      "id": "mobility",
+      "name": "모빌리티",
+      "icon": "🚗",
+      "services": [
+        {
+          "id": "kia-flex",
+          "name": "기아 플렉스",
+          "provider": "기아자동차",
+          "cancelUrl": "https://www.kia.com/kr/shopping-tools/kia-flex",
+          "plans": [
+            {
+              "name": "Monthly 레귤러 (경차)",
+              "price": 520000,
+              "period": "monthly",
+              "features": [
+                "보험",
+                "세금",
+                "정비 포함",
+                "차종 고정"
+              ],
+              "note": "레이/모닝 등"
+            },
+            {
+              "name": "Monthly 레귤러 (준중형)",
+              "price": 680000,
+              "period": "monthly",
+              "features": [
+                "보험",
+                "세금",
+                "정비 포함",
+                "차종 고정"
+              ],
+              "note": "K3/셀토스 등"
+            },
+            {
+              "name": "Monthly 레귤러 (중형)",
+              "price": 850000,
+              "period": "monthly",
+              "features": [
+                "보험",
+                "세금",
+                "정비 포함",
+                "차종 고정"
+              ],
+              "note": "K5/스포티지 등"
+            },
+            {
+              "name": "Monthly 구독 (준중형)",
+              "price": 780000,
+              "period": "monthly",
+              "features": [
+                "보험",
+                "세금",
+                "정비 포함",
+                "30일마다 차종 변경"
+              ],
+              "note": "K3/셀토스 등"
+            },
+            {
+              "name": "Monthly 구독 (중형)",
+              "price": 950000,
+              "period": "monthly",
+              "features": [
+                "보험",
+                "세금",
+                "정비 포함",
+                "30일마다 차종 변경"
+              ],
+              "note": "K5/스포티지 등"
+            },
+            {
+              "name": "Monthly 구독 (대형SUV)",
+              "price": 1200000,
+              "period": "monthly",
+              "features": [
+                "보험",
+                "세금",
+                "정비 포함",
+                "30일마다 차종 변경"
+              ],
+              "note": "쏘렌토/카니발 등"
+            },
+            {
+              "name": "Daily 구독",
+              "price": 54000,
+              "period": "daily",
+              "features": [
+                "단기 이용",
+                "보험 포함"
+              ],
+              "note": "1일 기준"
+            }
+          ]
         }
       ]
     }
