@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-04",
+  "lastUpdated": "2026-03-14",
   "categories": [
     {
       "id": "delivery",
@@ -61,6 +61,35 @@
             }
           ],
           "cancelUrl": "https://member.baemin.com/membership"
+        },
+        {
+          "id": "kurly-pass",
+          "name": "컬리패스",
+          "provider": "마켓컬리",
+          "plans": [
+            {
+              "name": "월간",
+              "price": 1900,
+              "period": "monthly",
+              "features": ["무료배송", "적립 혜택"]
+            }
+          ],
+          "cancelUrl": "https://www.kurly.com/mypage/subscription"
+        },
+        {
+          "id": "smile-club",
+          "name": "스마일클럽",
+          "provider": "11번가",
+          "plans": [
+            {
+              "name": "연간",
+              "price": 30000,
+              "period": "yearly",
+              "features": ["무료배송", "OK캐쉬백 적립"],
+              "note": "월 약 2,500원"
+            }
+          ],
+          "cancelUrl": "https://www.11st.co.kr/pages/smileclub"
         }
       ]
     },
@@ -186,6 +215,34 @@
             }
           ],
           "cancelUrl": "https://watcha.com/settings/account"
+        },
+        {
+          "id": "coupang-play",
+          "name": "쿠팡플레이",
+          "provider": "쿠팡",
+          "plans": [
+            {
+              "name": "월간",
+              "price": 4990,
+              "period": "monthly",
+              "features": ["스포츠 생중계", "오리지널 콘텐츠"]
+            }
+          ],
+          "cancelUrl": "https://www.coupangplay.com/settings"
+        },
+        {
+          "id": "apple-tv-plus",
+          "name": "애플TV+",
+          "provider": "Apple",
+          "plans": [
+            {
+              "name": "개인",
+              "price": 6500,
+              "period": "monthly",
+              "features": ["오리지널 콘텐츠", "4K HDR"]
+            }
+          ],
+          "cancelUrl": "https://support.apple.com/ko-kr/108052"
         }
       ]
     },
@@ -265,6 +322,200 @@
             }
           ],
           "cancelUrl": "https://support.apple.com/ko-kr/108052"
+        },
+        {
+          "id": "genie-music",
+          "name": "지니뮤직",
+          "provider": "KT",
+          "plans": [
+            {
+              "name": "스트리밍",
+              "price": 8900,
+              "period": "monthly",
+              "features": []
+            },
+            {
+              "name": "스트리밍+다운로드",
+              "price": 12900,
+              "period": "monthly",
+              "features": []
+            }
+          ],
+          "cancelUrl": "https://www.genie.co.kr/member/myPageMain"
+        },
+        {
+          "id": "flo",
+          "name": "FLO",
+          "provider": "드림어스컴퍼니",
+          "plans": [
+            {
+              "name": "스트리밍",
+              "price": 10900,
+              "period": "monthly",
+              "features": []
+            },
+            {
+              "name": "스트리밍+다운로드",
+              "price": 13400,
+              "period": "monthly",
+              "features": []
+            }
+          ],
+          "cancelUrl": "https://www.music-flo.com/my/subscription"
+        },
+        {
+          "id": "youtube-music",
+          "name": "유튜브 뮤직",
+          "provider": "Google",
+          "plans": [
+            {
+              "name": "뮤직 프리미엄 (단독)",
+              "price": 8900,
+              "period": "monthly",
+              "features": ["광고 없음", "백그라운드 재생", "오프라인 저장"]
+            },
+            {
+              "name": "뮤직+유튜브 프리미엄 번들",
+              "price": 14900,
+              "period": "monthly",
+              "features": ["유튜브 프리미엄 포함"]
+            }
+          ],
+          "cancelUrl": "https://music.youtube.com/paid_memberships"
+        },
+        {
+          "id": "vibe",
+          "name": "바이브(VIBE)",
+          "provider": "네이버",
+          "plans": [
+            {
+              "name": "스트리밍",
+              "price": 10900,
+              "period": "monthly",
+              "features": []
+            },
+            {
+              "name": "스트리밍+다운로드",
+              "price": 13900,
+              "period": "monthly",
+              "features": []
+            }
+          ],
+          "cancelUrl": "https://vibe.naver.com/mypage"
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "name": "독서",
+      "icon": "📚",
+      "services": [
+        {
+          "id": "millie",
+          "name": "밀리의 서재",
+          "provider": "밀리의 서재",
+          "plans": [
+            {
+              "name": "월간",
+              "price": 9900,
+              "period": "monthly",
+              "features": ["전자책 무제한", "오디오북", "요약본"]
+            },
+            {
+              "name": "연간",
+              "price": 7900,
+              "period": "yearly",
+              "features": [],
+              "note": "월 약 7,900원",
+              "yearlyPrice": 94800
+            }
+          ],
+          "cancelUrl": "https://www.millie.co.kr/setting/membership"
+        },
+        {
+          "id": "ridi-select",
+          "name": "리디셀렉트",
+          "provider": "리디",
+          "plans": [
+            {
+              "name": "월간",
+              "price": 4900,
+              "period": "monthly",
+              "features": ["웹툰·소설·전자책 무제한"]
+            }
+          ],
+          "cancelUrl": "https://ridibooks.com/account/settings"
+        },
+        {
+          "id": "kyobo-ebook",
+          "name": "교보eBook",
+          "provider": "교보문고",
+          "plans": [
+            {
+              "name": "월간",
+              "price": 9900,
+              "period": "monthly",
+              "features": ["전자책 무제한"]
+            }
+          ],
+          "cancelUrl": "https://ebook.kyobobook.co.kr/mypage"
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "name": "교육/생산성",
+      "icon": "🎓",
+      "services": [
+        {
+          "id": "class101",
+          "name": "클래스101+",
+          "provider": "클래스101",
+          "plans": [
+            {
+              "name": "월간",
+              "price": 29000,
+              "period": "monthly",
+              "features": ["전 클래스 무제한 수강"]
+            },
+            {
+              "name": "연간",
+              "price": 19900,
+              "period": "yearly",
+              "features": [],
+              "note": "월 약 19,900원",
+              "yearlyPrice": 238800
+            }
+          ],
+          "cancelUrl": "https://class101.net/settings/subscription"
+        },
+        {
+          "id": "notion",
+          "name": "Notion",
+          "provider": "Notion Labs",
+          "currency": "USD",
+          "plans": [
+            {
+              "name": "Free",
+              "price": 0,
+              "period": "monthly",
+              "features": []
+            },
+            {
+              "name": "Plus (개인)",
+              "price": 12,
+              "period": "monthly",
+              "features": []
+            },
+            {
+              "name": "Business (팀)",
+              "price": 18,
+              "period": "monthly",
+              "features": [],
+              "note": "인당"
+            }
+          ],
+          "cancelUrl": "https://www.notion.so/profile/billing"
         }
       ]
     },
@@ -699,6 +950,55 @@
             }
           ],
           "cancelUrl": "https://x.ai/account"
+        },
+        {
+          "id": "github-copilot",
+          "name": "GitHub Copilot",
+          "provider": "GitHub",
+          "currency": "USD",
+          "plans": [
+            {
+              "name": "Free",
+              "price": 0,
+              "period": "monthly",
+              "features": ["월 2,000회 코드 완성"]
+            },
+            {
+              "name": "Individual",
+              "price": 10,
+              "period": "monthly",
+              "features": ["무제한 코드 완성", "채팅"]
+            },
+            {
+              "name": "Business",
+              "price": 19,
+              "period": "monthly",
+              "features": [],
+              "note": "인당"
+            }
+          ],
+          "cancelUrl": "https://github.com/settings/copilot"
+        },
+        {
+          "id": "adobe-cc",
+          "name": "Adobe Creative Cloud",
+          "provider": "Adobe",
+          "currency": "USD",
+          "plans": [
+            {
+              "name": "단일 앱",
+              "price": 20.99,
+              "period": "monthly",
+              "features": ["포토샵·일러스트 등 1개 앱"]
+            },
+            {
+              "name": "All Apps",
+              "price": 54.99,
+              "period": "monthly",
+              "features": ["전 앱 이용", "100GB 클라우드"]
+            }
+          ],
+          "cancelUrl": "https://account.adobe.com/plans"
         }
       ]
     },
