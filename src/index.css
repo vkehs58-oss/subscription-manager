@@ -49,3 +49,14 @@ body { scrollbar-width: none; }
 .animate-fade-slide {
   animation: fadeSlide 0.2s ease-out;
 }
+
+/* Safe area utilities */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+.pb-safe-extra {
+  padding-bottom: max(16px, env(safe-area-inset-bottom));
+}

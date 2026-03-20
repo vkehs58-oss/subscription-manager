@@ -38,4 +38,15 @@ export interface MySubscription {
   yearlyPrice?: number;
   paymentDay?: number;
   memo?: string;
+  // Custom subscription fields
+  isCustom?: boolean;
+  customName?: string;
+  customCategory?: string;
+}
+
+export interface CustomSubscription {
+  name: string;
+  price: number;
+  paymentDay?: number;
+  category?: string;
 }
