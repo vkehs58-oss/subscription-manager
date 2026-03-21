@@ -30,40 +30,52 @@ const ICON_COLORS: Record<string, string> = {
   ai: '#EDE7F6',
 }
 
-// Simple Icons CDN 슬러그 (글로벌 서비스 — MIT 라이선스)
-// https://simpleicons.org 에서 슬러그 확인 가능
-const SIMPLE_ICONS: Record<string, string> = {
-  'netflix':          'netflix',
-  'spotify':          'spotify',
-  'youtube-premium':  'youtube',
-  'disney-plus':      'disneyplus',
-  'apple-music':      'applemusic',
-  'icloud':           'icloud',
-  'google-one':       'google',
-  'ms365':            'microsoft365',
-  'xbox-gamepass':    'xbox',
-  'nintendo-online':  'nintendo',
-  'ps-plus':          'playstation',
-  'chatgpt':          'openai',
-  'claude':           'anthropic',
-  'gemini':           'googlegemini',
-  'perplexity':       'perplexity',
-  'xai':              'x',
-}
-
-// 한국/브랜드 서비스 컬러 이니셜 (저작권 없음, 브랜드 컬러로 즉시 인식)
-const BRAND_COLORS: Record<string, { bg: string; text: string }> = {
-  'naver-plus':     { bg: '#03C75A', text: '#fff' },
-  'coupang-wow':    { bg: '#FF6000', text: '#fff' },
-  'yogipass-x':     { bg: '#FC4D2A', text: '#fff' },
-  'baemin-club':    { bg: '#2AC1BC', text: '#fff' },
-  'tving':          { bg: '#FF153C', text: '#fff' },
-  'wavve':          { bg: '#007DFF', text: '#fff' },
-  'watcha':         { bg: '#FF0558', text: '#fff' },
-  'melon':          { bg: '#00CD3C', text: '#000' },
-  'kakao-emoticon': { bg: '#FEE500', text: '#3A1D1D' },
-  'toss-prime':     { bg: '#0064FF', text: '#fff' },
-  'kia-flex':       { bg: '#BB162B', text: '#fff' },
+// 로컬 아이콘 매핑 (외부 CDN 호출 없음 — 앱인토스 심사 대응)
+const SERVICE_ICONS: Record<string, { emoji: string; bg: string; color: string }> = {
+  'netflix':          { emoji: 'N',  bg: '#E50914', color: '#fff' },
+  'spotify':          { emoji: '♫',  bg: '#1DB954', color: '#fff' },
+  'youtube-premium':  { emoji: '▶', bg: '#FF0000', color: '#fff' },
+  'disney-plus':      { emoji: 'D+', bg: '#113CCF', color: '#fff' },
+  'apple-music':      { emoji: '♪',  bg: '#FC3C44', color: '#fff' },
+  'apple-tv':         { emoji: '📺', bg: '#000000', color: '#fff' },
+  'icloud':           { emoji: '☁️', bg: '#3693F3', color: '#fff' },
+  'google-one':       { emoji: 'G',  bg: '#4285F4', color: '#fff' },
+  'ms365':            { emoji: 'M',  bg: '#D83B01', color: '#fff' },
+  'xbox-gamepass':    { emoji: '🎮', bg: '#107C10', color: '#fff' },
+  'nintendo-online':  { emoji: '🕹️', bg: '#E60012', color: '#fff' },
+  'ps-plus':          { emoji: 'PS', bg: '#003087', color: '#fff' },
+  'chatgpt':          { emoji: '🤖', bg: '#10A37F', color: '#fff' },
+  'chatgpt-plus':     { emoji: '🤖', bg: '#10A37F', color: '#fff' },
+  'claude':           { emoji: 'C',  bg: '#D97706', color: '#fff' },
+  'gemini':           { emoji: '✦',  bg: '#4285F4', color: '#fff' },
+  'perplexity':       { emoji: 'P',  bg: '#1A1A2E', color: '#fff' },
+  'xai':              { emoji: 'X',  bg: '#000000', color: '#fff' },
+  'naver-plus':       { emoji: 'N',  bg: '#03C75A', color: '#fff' },
+  'coupang-wow':      { emoji: '🚀', bg: '#FF6000', color: '#fff' },
+  'coupang-rocket-wow': { emoji: '🚀', bg: '#E01E5A', color: '#fff' },
+  'yogipass-x':       { emoji: 'Y',  bg: '#FC4D2A', color: '#fff' },
+  'baemin-club':      { emoji: 'B',  bg: '#2AC1BC', color: '#fff' },
+  'tving':            { emoji: 'T',  bg: '#FF153C', color: '#fff' },
+  'wavve':            { emoji: 'W',  bg: '#007DFF', color: '#fff' },
+  'watcha':           { emoji: 'W',  bg: '#FF0558', color: '#fff' },
+  'melon':            { emoji: '🍈', bg: '#00CD3C', color: '#fff' },
+  'kakao-emoticon':   { emoji: 'K',  bg: '#FEE500', color: '#3A1D1D' },
+  'toss-prime':       { emoji: 'T',  bg: '#0064FF', color: '#fff' },
+  'kia-flex':         { emoji: 'K',  bg: '#BB162B', color: '#fff' },
+  'genie-music':      { emoji: '🎵', bg: '#007AFF', color: '#fff' },
+  'flo':              { emoji: 'F',  bg: '#3F3FFF', color: '#fff' },
+  'youtube-music':    { emoji: '🎶', bg: '#FF0000', color: '#fff' },
+  'vibe':             { emoji: 'V',  bg: '#1EC800', color: '#fff' },
+  'millie':           { emoji: '📚', bg: '#FFD700', color: '#333' },
+  'ridi-select':      { emoji: 'R',  bg: '#1F8CE6', color: '#fff' },
+  'kyobo-ebook':      { emoji: '📖', bg: '#003D7C', color: '#fff' },
+  'class101':         { emoji: '🎓', bg: '#FF5600', color: '#fff' },
+  'notion':           { emoji: 'N',  bg: '#000000', color: '#fff' },
+  'curly-pass':       { emoji: '🛒', bg: '#5F0080', color: '#fff' },
+  'github-copilot':   { emoji: '🐙', bg: '#24292E', color: '#fff' },
+  'adobe-cc':         { emoji: 'Ai', bg: '#FF0000', color: '#fff' },
+  'webtoon':          { emoji: 'W',  bg: '#00D564', color: '#fff' },
+  'kakao-t':          { emoji: 'K',  bg: '#FEE500', color: '#3A1D1D' },
 }
 
 interface LogoIconProps {
@@ -73,41 +85,21 @@ interface LogoIconProps {
 }
 
 function LogoIcon({ serviceId, serviceName, bg }: LogoIconProps) {
-  const [iconFailed, setIconFailed] = useState(false)
+  const icon = SERVICE_ICONS[serviceId]
 
-  const simpleIconSlug = SIMPLE_ICONS[serviceId]
-  const brandColor = BRAND_COLORS[serviceId]
-
-  // 1순위: Simple Icons CDN (글로벌 서비스, SVG 벡터 품질)
-  if (simpleIconSlug && !iconFailed) {
-    return (
-      <div
-        className="w-11 h-11 rounded-2xl flex items-center justify-center shrink-0"
-        style={{ background: bg }}
-      >
-        <img
-          src={`https://cdn.simpleicons.org/${simpleIconSlug}`}
-          alt={serviceName}
-          className="w-7 h-7 object-contain"
-          onError={() => setIconFailed(true)}
-        />
-      </div>
-    )
-  }
-
-  // 2순위: 브랜드 컬러 이니셜 (한국 서비스 — 브랜드 컬러 배경으로 즉시 인식)
-  if (brandColor) {
+  // 1순위: 로컬 아이콘 (브랜드 컬러 + 이모지/이니셜)
+  if (icon) {
     return (
       <div
         className="w-11 h-11 rounded-2xl flex items-center justify-center text-[18px] font-black shrink-0"
-        style={{ background: brandColor.bg, color: brandColor.text }}
+        style={{ background: icon.bg, color: icon.color }}
       >
-        {serviceName.charAt(0)}
+        {icon.emoji}
       </div>
     )
   }
 
-  // 3순위: 기본 이니셜 폴백
+  // 2순위: 기본 이니셜 폴백
   return (
     <div
       className="w-11 h-11 rounded-2xl flex items-center justify-center text-[15px] font-extrabold shrink-0 text-toss-gray-700"

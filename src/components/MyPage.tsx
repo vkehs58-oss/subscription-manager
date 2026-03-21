@@ -17,41 +17,49 @@ function fmt(p: number, c?: string) {
   return c === 'USD' ? `$${p}` : `${p.toLocaleString()}원`
 }
 
-// #1 서비스 도메인 매핑 (MyPage 구독 목록 아이콘용)
-const SERVICE_DOMAINS: Record<string, string> = {
-  'netflix': 'netflix.com',
-  'youtube-premium': 'youtube.com',
-  'spotify': 'spotify.com',
-  'chatgpt-plus': 'openai.com',
-  'coupang-rocket-wow': 'coupang.com',
-  'claude': 'anthropic.com',
-  'disney-plus': 'disneyplus.com',
-  'apple-music': 'apple.com',
-  'naver-plus': 'naver.com',
-  'kakao-t': 'kakao.com',
-  'wavve': 'wavve.com',
-  'tving': 'tving.com',
-  'millie': 'millie.co.kr',
-  'melon': 'melon.com',
-  'webtoon': 'webtoon.com',
+// #1 서비스 아이콘 매핑 (로컬 이모지/텍스트 — 외부 호출 없음)
+const SERVICE_ICONS: Record<string, { emoji: string; bg: string; color: string }> = {
+  'netflix':          { emoji: 'N',  bg: '#E50914', color: '#fff' },
+  'youtube-premium':  { emoji: '▶', bg: '#FF0000', color: '#fff' },
+  'spotify':          { emoji: '♫',  bg: '#1DB954', color: '#fff' },
+  'chatgpt-plus':     { emoji: '🤖', bg: '#10A37F', color: '#fff' },
+  'coupang-rocket-wow': { emoji: '🚀', bg: '#E01E5A', color: '#fff' },
+  'claude':           { emoji: 'C',  bg: '#D97706', color: '#fff' },
+  'disney-plus':      { emoji: 'D+', bg: '#113CCF', color: '#fff' },
+  'apple-music':      { emoji: '♪',  bg: '#FC3C44', color: '#fff' },
+  'naver-plus':       { emoji: 'N',  bg: '#03C75A', color: '#fff' },
+  'kakao-t':          { emoji: 'K',  bg: '#FEE500', color: '#3A1D1D' },
+  'wavve':            { emoji: 'W',  bg: '#1B1B3A', color: '#fff' },
+  'tving':            { emoji: 'T',  bg: '#FF0558', color: '#fff' },
+  'millie':           { emoji: '📚', bg: '#FFD700', color: '#333' },
+  'melon':            { emoji: '🍈', bg: '#00CD3C', color: '#fff' },
+  'webtoon':          { emoji: 'W',  bg: '#00D564', color: '#fff' },
+  'apple-tv':         { emoji: '📺', bg: '#000000', color: '#fff' },
+  'genie-music':      { emoji: '🎵', bg: '#007AFF', color: '#fff' },
+  'flo':              { emoji: 'F',  bg: '#3F3FFF', color: '#fff' },
+  'youtube-music':    { emoji: '🎶', bg: '#FF0000', color: '#fff' },
+  'vibe':             { emoji: 'V',  bg: '#1EC800', color: '#fff' },
+  'ridi-select':      { emoji: 'R',  bg: '#1F8CE6', color: '#fff' },
+  'kyobo-ebook':      { emoji: '📖', bg: '#003D7C', color: '#fff' },
+  'class101':         { emoji: '🎓', bg: '#FF5600', color: '#fff' },
+  'notion':           { emoji: 'N',  bg: '#000000', color: '#fff' },
+  'curly-pass':       { emoji: '🛒', bg: '#5F0080', color: '#fff' },
+  'github-copilot':   { emoji: '🐙', bg: '#24292E', color: '#fff' },
+  'adobe-cc':         { emoji: 'Ai', bg: '#FF0000', color: '#fff' },
+  'gemini':           { emoji: '✦',  bg: '#4285F4', color: '#fff' },
+  'google-one':       { emoji: 'G',  bg: '#4285F4', color: '#fff' },
 }
 
 function SubLogo({ serviceId, name, bg }: { serviceId: string; name: string; bg?: string }) {
-  const [failed, setFailed] = useState(false)
-  const domain = SERVICE_DOMAINS[serviceId]
+  const icon = SERVICE_ICONS[serviceId]
 
-  if (domain && !failed) {
+  if (icon) {
     return (
       <div
-        className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 overflow-hidden"
-        style={{ background: bg || '#f2f4f6' }}
+        className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-[16px] font-extrabold"
+        style={{ background: icon.bg, color: icon.color }}
       >
-        <img
-          src={`https://logo.clearbit.com/${domain}`}
-          alt={name}
-          className="w-6 h-6 object-contain"
-          onError={() => setFailed(true)}
-        />
+        {icon.emoji}
       </div>
     )
   }
